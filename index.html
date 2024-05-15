@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+
+  <!-- Rating state start -->
+
+  <article class="container container-start">
+    <div class="circle">
+      <img class="star-image" src="images/icon-star.svg" alt="icon">
+    </div>
+
+    <div class="text-container-rating">
+      <h1 class="title">How did we do?</h1>
+      <p class="paragraph">
+        Please let us know how we did with your support request.
+        All feedback is appreciated to help us improve our offering!
+      </p>
+    </div>
+
+    <div class="number-button-container-rating">
+      <div class="content-nb-select">
+        <input type="radio" id="nb-select" class="btn-nb-select" value="1">
+        <label for="1">1</label>
+      </div>
+
+      <div class="content-nb-select">
+        <input type="radio" id="nb-select" class="btn-nb-select" value="2">
+        <label for="2">2</label>
+      </div>
+
+      <div class="content-nb-select">
+        <input type="radio" id="nb-select" class="btn-nb-select" value="3">
+        <label for="3">3</label>
+      </div>
+
+      <div class="content-nb-select">
+        <input type="radio" id="nb-select" class="btn-nb-select" value="4">
+        <label for="4">4</label>
+      </div>
+
+      <div class="content-nb-select">
+        <input type="radio" id="nb-select" class="btn-nb-select" value="5">
+        <label for="5">5</label>
+      </div>
+    </div>
+
+    <input type="submit" class="button-submit" id="submitValues" value="SUBMIT">
+
+  </article>
+
+  <!-- Rating state end -->
+
+  <!-- Loading start -->
+
+  <article class="container-loading ">
+    <div class="lds-ripple">
+      <div></div>
+      <div></div>
+    </div>
+  </article>
+
+  <!-- Loading end -->
+
+  <!-- Thank you state start -->
+
+  <article class="container container-end">
+    <img class="illustration" src="images/illustration-thank-you.svg" alt="image">
+
+    <div class="select">
+      <p>
+        You selected <span id="number-select"></span> out of 5
+      </p>
+    </div>
+
+    <h1 class="title">Thank you!</h1>
+    <p class="paragraph">
+      We appreciate you taking the time to give a rating.
+      If you ever need more support, don't hesitate to get in touch!
+    </p>
+
+  </article>
+
+  <!-- Thank you state end -->
+
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+
+  <script src="app.js"></script>
+</body>
+
+</html>
